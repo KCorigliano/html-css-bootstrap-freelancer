@@ -14,30 +14,38 @@
     
     <nav class="navbar navbar-expand-sm navbar-dark dark-bg">
         <div class="container">
-          <a class="navbar-brand" href="#">START BOOTSTRAP</a>
+          <h2><a class="navbar-brand" href="#">START BOOTSTRAP</a></h2>
+
+          <!-- Button menù a scomparsa -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">PORTFOLIO</a></li>
-                  <li><a class="dropdown-item" href="#">ABOUT</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">CONTACT ME</a></li>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- Testo a scomparsa da sm -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">PORTFOLIO</a></li>
+                    <li><a class="dropdown-item" href="#">ABOUT</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">CONTACT ME</a></li>
+                    </ul>
+                </li>
                 </ul>
-              </li>
-            </ul>
-            <form class="d-flex justify-content-end">
-                <ul class="navbar-nav py-3">
-                    <li class="pe-2">PORTFOLIO</li>
-                    <li class="pe-2">ABOUT ME</li>
-                    <li>CONTACT</li>
-                </ul>
-            </form>
-          </div>
+
+                <!-- Testo menù a scomparsa -->
+                <form class="d-flex justify-content-end">
+                    <ul class="navbar-nav py-3">
+                        <li class="pe-2">PORTFOLIO</li>
+                        <li class="pe-2">ABOUT ME</li>
+                        <li>CONTACT</li>
+                    </ul>
+                </form>
+
+            </div>
         </div>
-      </nav>
+    </nav>
 
     <div class="container-fluid green-bg py-4 uppercase">
         <div class="container">
@@ -53,25 +61,23 @@
         </div>
     </div>
 
-    
     <div class="container py-4 text-center">
         <h1>portfolio</h1>
         <div class="row justify-content-center">
-            <div class="w-50px border-bottom border-2 border-dark line"></div>
+            <div class="w-50px border-bottom border-2 border-dark mb-4 line"></div>
             <di class="star w-50px"><i class="fas fa-star"></i></di>
             <div class="w-50px border-bottom border-2 border-dark line"></div>
         </div>
         <div class="row">
-            <div class="col-12 col-sm-6 col-lg-4 py-2 img"><img class="img-fluid" src="img/cabin.png" alt=""></div>
-            <div class="col-12 col-sm-6 col-lg-4 py-2 img"><img class="img-fluid" src="img/cake.png" alt=""></div>
-            <div class="col-12 col-sm-6 col-lg-4 py-2 img"><img class="img-fluid" src="img/circus.png" alt=""></div>
-            <div class="col-12 col-sm-6 col-lg-4 py-2 img"><img class="img-fluid" src="img/game.png" alt=""></div>
-            <div class="col-12 col-sm-6 col-lg-4 py-2 img"><img class="img-fluid" src="img/safe.png" alt=""></div>
-            <div class="col-12 col-sm-6 col-lg-4 py-2 img"><img class="img-fluid" src="img/submarine.png" alt=""></div>
+            <div class="col-12 col-sm-6 col-lg-4 pt-4 img"><img class="img-fluid" src="img/cabin.png" alt=""></div>
+            <div class="col-12 col-sm-6 col-lg-4 pt-4 img"><img class="img-fluid" src="img/cake.png" alt=""></div>
+            <div class="col-12 col-sm-6 col-lg-4 pt-4 img"><img class="img-fluid" src="img/circus.png" alt=""></div>
+            <div class="col-12 col-sm-6 col-lg-4 pt-4 img"><img class="img-fluid" src="img/game.png" alt=""></div>
+            <div class="col-12 col-sm-6 col-lg-4 pt-4 img"><img class="img-fluid" src="img/safe.png" alt=""></div>
+            <div class="col-12 col-sm-6 col-lg-4 py-4 img"><img class="img-fluid" src="img/submarine.png" alt=""></div>
         </div>
     </div>
     
-
     <div class="container-fluid green-bg py-4">
         <div class="container">
             <div class="row px-5">
@@ -91,11 +97,13 @@
         </div>
     </div>
 
-
     <div class="container py-4">
-        <div class="row  px-5">
-            <div class="col-12 justify-content-center text-center">
+        <div class="row px-5">
+            <div class="row col-12 justify-content-center text-center">
                 <h1>contact me</h1>
+                <div class="w-50px border-bottom border-2 border-dark mb-4 line"></div>
+                <di class="star w-50px"><i class="fas fa-star"></i></di>
+                <div class="w-50px border-bottom border-2 border-dark line"></div>
             </div>
             <div class="col-12 border-bottom text-data px-0">
                 <input class="col-12" type="text" name="Name" id="name" placeholder="Name">
@@ -107,7 +115,7 @@
                 <input class="col-12" type="text" name="number" id="number" placeholder="Phone Number">
             </div>
             <div class="col-12 border-bottom text-data px-0">
-                <textarea name="message" id="message" cols="59" rows="10" placeholder="Message"></textarea>
+                <textarea class="col-12" name="message" id="message" rows="10" placeholder="Message"></textarea>
             </div>
             <div class="col-1 px-0 pt-2 pb-4">
                 <button type="button" class="btn btn-success">Send</button>
@@ -118,15 +126,19 @@
     <div class="container-fluid dark-bg py-4">
         <div class="container">
             <div class="row text-center">
-                <div class="col-12 col-sm-4 text">
-                    <h3>location</h3>
+                <div class="col-12 col-sm-4 py-4 text">
+                    <h5>location</h5>
                     <p>2215 john Daniel Drive Clark, MO 54243</p>
                 </div>
-                <div class="col-12 col-sm-4 text">
-                    <h3>around the web</h3>
+                <div class="col-12 col-sm-4 py-4 text">
+                    <h5>around the web</h5>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin-in"></i>
                 </div>
-                <div class="col-12 col-sm-4 text">
-                    <h3>about freelancer</h3>
+                <div class="col-12 col-sm-4 py-4 text">
+                    <h5>about freelancer</h5>
                     <p>Freelance is a free to use, open source Bootstrap theme created by Start Bootstrap.</p>
                 </div>
             </div>
@@ -134,11 +146,11 @@
     </div>
 
     <div class="container-fluid darkblack-bg py-4">
-            <div class="row text-center">
-                <div class="text">
-                    <p>Copyright @ Your Website 2019</p>
-                </div>
+        <div class="row text-center">
+            <div class="text">
+                <p>Copyright @ Your Website 2019</p>
             </div>
+        </div>
     </div>
 
 </body>
