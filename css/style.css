@@ -1,5 +1,14 @@
-nav{
+.navbar{
     height: 70px;
+    text-transform: uppercase;
+}
+
+.w-50px{
+    width: 50px;
+}
+
+.star{
+    display: inline-block;
 }
 
 .green-bg{
@@ -26,7 +35,10 @@ nav{
 }
 
 h1,
-h3{
+h2,
+h3,
+h4,
+h5{
     text-transform: uppercase;
 }
 
@@ -41,6 +53,11 @@ h3{
     padding: 5px 0;
 }
 
+::placeholder {
+    color: black;
+    justify-content: flex-start;
+}
+
 #message{
     height: 150px;
     border: none;
@@ -48,4 +65,9 @@ h3{
 
 .darkblack-bg p{
     font-size: 12px;
+}
+
+.btn-success{
+    background-color: #1abc9c;
+    border: #1abc9c ;
 }
